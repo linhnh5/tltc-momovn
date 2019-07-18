@@ -5,4 +5,6 @@ return [
     'ACCESS_KEY' => env('MOMO_ACCESS_KEY', ''),
     'API_END_POINT' => env('MOMO_API_END_POINT', '/gw_payment/transactionProcessor'),
     'DOMAIN' => env('MOMO_DOMAIN', 'https://test-payment.momo.vn'),
+    'RETURN_URL' => env('MOMO_RETURN_URL', ''),
+    'NOTIFY_URL' => env('MOMO_NOTIFY_URL', ''),
 ];

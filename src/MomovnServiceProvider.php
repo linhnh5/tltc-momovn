@@ -31,6 +31,6 @@ class MomovnServiceProvider extends ServiceProvider
         include __DIR__.'/../vendor/autoload.php';
         $this->publishes([
             __DIR__.'/config/momo.php' => config_path('momovn.php'),
-        ]);
+        ], 'public');
     }
 }

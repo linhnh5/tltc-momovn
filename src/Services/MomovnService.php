@@ -26,6 +26,8 @@ class MomovnService
      */
     public function requestMomoPayment($requestId, $amount, $orderId, $orderInfo, $returnUrl, $notifyUrl, $extraData = '')
     {
+        $returnUrl = $returnUrl ? : $this->config['RETURN_URL'];
+        $notifyUrl = $notifyUrl ? : $this->config['NOTIFY_URL'];
         $rawData =
             [
                 'partnerCode' => $this->config['PARTNER_CODE'],
