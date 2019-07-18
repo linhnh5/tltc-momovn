@@ -7,7 +7,6 @@
         }
     ],
     "type": "metapackage",
-    "minimum-stability": "dev",
     "require": {
         "ixudra/curl": "^6.16"
     }

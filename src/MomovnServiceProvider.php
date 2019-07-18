@@ -28,6 +28,7 @@ class MomovnServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        include __DIR__.'/../vendor/autoload.php';
         $this->publishes([
             __DIR__.'/config/momo.php' => config_path('momovn.php'),
         ]);
