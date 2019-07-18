@@ -35,7 +35,23 @@ Add this line to provider list in config/app.php
 ```sh
 \Tltc\Momovn\Providers\MomovnServiceProvider::class,
 ```
-
+## Example code
+```sh
+        $momoService = new MomovnService();
+        $orderId = 'M'.rand(1, 20000);
+        $amount = (string)rand(1000000, 2000000);
+        $orderInfo = "Momo API testing";
+        $requestId = 'M'.rand(1,200000);
+        $returnUrl = route('home');
+        $notifyUrl = route('home');
+        $extraData = "merchantName=;merchantId=";
+        $response = $momoService->requestMomoPayment($requestId, $amount, $orderId, $orderInfo, $returnUrl, $notifyUrl, $extraData);
+        if ($response && !empty($response->payUrl)) {
+            return redirect($response->payUrl); // Redirect to Momo payment
+        } else {
+            dd($response); // Check error code in Momo document
+        }
+```
 
 ## License
 
