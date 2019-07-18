@@ -1,0 +1,14 @@
+{
+    "name": "tltc/momovn",
+    "authors": [
+        {
+            "name": "Nguyen Hoang Linh",
+            "email": "mr.linhnh5@gmail.com"
+        }
+    ],
+    "type": "metapackage",
+    "minimum-stability": "dev",
+    "require": {
+        "ixudra/curl": "^6.16"
+    }
+}
