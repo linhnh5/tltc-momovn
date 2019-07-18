@@ -1,6 +1,6 @@
 <?php
 
-namespace Tltc\Momovn\Providers;
+namespace Tltc\Momovn;
 
 use Illuminate\Support\ServiceProvider;
 
