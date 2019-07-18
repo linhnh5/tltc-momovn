@@ -6,7 +6,6 @@
             "email": "mr.linhnh5@gmail.com"
         }
     ],
-    "type": "metapackage",
     "require": {
         "ixudra/curl": "^6.16"
     }
